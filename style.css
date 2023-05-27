@@ -1,0 +1,263 @@
+header{
+    background-color: #F3F5FC;
+    position: absolute;
+}
+
+body{
+    background-color: #F3F5FC;
+}
+
+#imagenLogo_a{
+    display: inline;
+    height: 48px;
+    width: 31px;
+    margin: 40px;
+}
+
+
+.mensaje{
+    position: absolute;
+    width: 50%;
+    background-color: #F3F5FC;
+    margin-top: 168px;    
+    
+}
+
+textarea::placeholder{
+    color: #0A3871;
+    
+}
+
+#inputMensaje{  
+    width: 90%;     
+    height: 15em;   
+    margin-left: 100px;
+    resize: none;
+    border: 0;
+    background-color: #F3F5FC;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    color: #0A3871;
+}
+
+.mensajeEncriptadoFondo{   
+    position: absolute;
+    background-color: #F3F5FC;
+    width: 30%;
+    height: 80%;  
+    margin-top: 50px;  
+    margin-left: 60%;   
+    
+    
+}
+.mensajeEncriptadoRectangle{       
+    width: 80%;
+    height: 720px;    
+    background-color:white;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 20px;
+    
+    
+
+}
+#parrafoNingunMensaje{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: #343A40;
+    font-weight: 700;
+    padding: 30px 30px 10px 30px;
+    
+}
+#parrafoIngreseTexto{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    color: #343A40;    
+    padding: 0 30px 0 30px;
+}
+
+#mensajeEncriptado{
+    padding: 20px;
+    margin: 20px;
+    margin-bottom: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    color: #343A40;   
+   
+}
+
+#imagenMuneco{    
+    width: 60%;
+    height: auto;
+    /*margin-top: 30%;*/
+}
+
+.info{       
+    margin-left: 100px; 
+   
+}
+
+#imagenInfo{
+    display: inline-block;
+    
+    
+}
+
+.info p{    
+    display: inline-block;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 12px; 
+    color: #495057;
+    opacity: 0.8;
+    vertical-align: middle;
+}
+
+.botones{
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 100px;   
+       
+}
+
+#encriptarBoton{
+    padding: 24px;
+    width: 40%;
+    height: 70px;
+    /* Dark blue/dark-blue-300 */
+    border: 1px solid #0A3871;
+    background: #0A3871;
+    border-radius: 24px;
+    margin-right: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#desencriptarBoton{
+    padding: 24px;
+    width: 40%;
+    height: 70px;
+    margin: 5px;
+    /* Dark blue/dark-blue-300 */
+    background: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin-right: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #0A3871;
+}
+
+#copiarBoton{
+    position: absolute;
+    padding: 20px;
+    width: 100px;
+    height: 70px;
+    background-color: #FFFFFF;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    margin-top: 625px;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: #0A3871;
+    display: none;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    bottom: 0;
+    background-color: #0A3871;    
+}
+
+.footer{
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 12px; 
+    color: #F3F5FC;
+    opacity: 0.8;
+}
+
+@media screen and (max-width:600px){
+    header{
+        position: relative;
+        width: auto;
+    }
+    .mensaje{
+        width: auto;
+        position: relative;
+        margin-left: 0;
+        margin-top: 5px;
+    }
+    #inputMensaje{
+        margin-left: 5%;
+        width: auto;
+        height: fit-content;
+        margin-bottom: 50px;
+    }
+    .info{
+        margin-left: 40px;
+        
+    }
+
+    .botones{
+        width: 100%;
+        position: relative;
+        margin-top: 5px;
+        margin-left: 0px;
+        
+        
+    }
+    #encriptarBoton{
+        width: 70%;
+        margin-top: 15px;
+        margin-left: 10%;
+    }
+
+    #desencriptarBoton{
+        width: 70%;
+        margin-top: 5px;
+        margin-left: 10%;
+    }
+    .mensajeEncriptadoFondo{
+        display: inline-block;
+        position: relative;        
+        width: 90%;
+        height: auto;
+        margin-top: 10px;
+        margin-left: 0px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .mensajeEncriptadoRectangle{        
+        margin-left: 0;
+        width: auto;
+        height: auto;
+        padding: 10px;
+    }
+
+    #copiarBoton{
+        position: relative;
+        margin-top: 20px;
+    }
+
+
+    #parrafoNingunMensaje{
+        padding: 0;
+    }
+
+    #imagenMuneco{
+        display: none;
+    }
+}

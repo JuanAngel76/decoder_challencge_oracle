@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Encriptador Challenge One</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    
+   </head> 
+
+   <body>
+    <header>
+        <img id="imagenLogo_a" src="imagenes\Vector_alura.png" alt="logo alura">
+    </header>
+
+    <main>
+        <section class="mensaje"> 
+            <textarea type="text" placeholder="Ingrese el texto aqui" id="inputMensaje"  required></textarea>
+            <div class="info">
+                <img id="imagenInfo" src="imagenes\bi_exclamation-circle-fill.png" alt="info">
+                <p>Solo letras minúsculas y sin acentos</p>
+            </div>
+    
+            <div class="botones">
+                <input type="button" onclick="encriptar()" value="Encriptar" id="encriptarBoton">
+                <input type="button" onclick="desencriptar()" value="Desencriptar" id="desencriptarBoton">
+            </div>
+        </section>          
+
+
+
+        <div class="mensajeEncriptadoFondo">
+            <div class="mensajeEncriptadoRectangle">
+                <img id="imagenMuneco" src="imagenes\Muneco.png" alt="dibujo">
+                <p id="parrafoNingunMensaje">Ningún mensaje fue encontrado</p>
+                <p id="parrafoIngreseTexto">Ingresa el texto que desees encriptar o desencriptar</p>
+                <p id="mensajeEncriptado"> </p>
+                <input type="button" onclick="copy()" value="Copiar" id="copiarBoton">
+            </div>
+        </div>
+
+        <footer>
+            <p class="footer">Juan Angel Sanchez Cardenas - 2023 <br> juanangels818@gmail.com</p>
+        </footer>
+        
+    </main>
+    <script src="script_encriptador.js"></script>
+   </body>
+</html>
